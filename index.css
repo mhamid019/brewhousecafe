@@ -582,7 +582,7 @@ nav .menu-bar:hover {
 
 .footer-section p {
     color: var(--light-white);
-    font-weight: 200;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -604,7 +604,7 @@ h3.footer-logo {
 }
 
 .footer-section .footer-social-icons-msg {
-    color: rgb(241, 77, 77);
+    color: var(--primary-color);
     margin-top: 1rem;
 }
 
@@ -632,7 +632,7 @@ h3.footer-logo {
 }
 
 .footer-links li {
-    margin: 6px 0;
+    margin: 10px 0;
 }
 
 .footer-links a {
@@ -711,7 +711,7 @@ h3.footer-logo {
     }
 
     nav a:not(.logo) {
-        color: var(--coffee-color);
+        color: var(--primary-color);
         display: block;
         width: 100%;
     }
