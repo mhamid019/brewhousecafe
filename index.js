@@ -1,9 +1,22 @@
-$("header .menu-bar").click(function () {
+// menu toggle
+
+// open & close buttons
+$("header .menu-bar, header .close-menu-bar").click(function (e) {
+    e.stopPropagation(); // escape from window click
     $("header .menu").toggleClass("show");
 });
 
-$("header .close-menu-bar").click(function () {
-    $("header .menu").toggleClass("show");
+// window click hide menu
+$(window).click(function (e) {
+
+    // agar menub clicked ignore
+    if ($(e.target).closest("header .menu").length) return;
+
+    // if menu-bar clicked ignore
+    if ($(e.target).closest("header .menu-bar").length) return;
+
+    // otherwise remove menu 
+    $("header .menu").removeClass("show");
 });
 
 const box = $(".coffee-card-container");
